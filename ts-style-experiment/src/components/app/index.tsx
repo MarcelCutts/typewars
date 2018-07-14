@@ -1,9 +1,8 @@
 import * as React from "react";
-import "./App.css";
-import Input from "./Input";
-import { injectGlobal } from "./styled-components";
-
-import Title from "./Title";
+import { injectGlobal } from "../../styled-components";
+import Input from "../input";
+import Title from "../title";
+import "./index.css";
 
 // @ts-ignore : Hack to make TS compiler happy
 // about no unassigned expressions and no unused variables
