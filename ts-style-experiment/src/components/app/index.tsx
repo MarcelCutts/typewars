@@ -1,27 +1,25 @@
 import * as React from "react";
-import { injectGlobal } from "../../styled-components";
+import ApolloClient from "apollo-boost";
+import { ApolloProvider } from "react-apollo";
+import { BrowserRouter, Route } from "react-router-dom";
+import Dropdown from "../dropdown";
 import Input from "../input";
+import Navigation from "../navigation";
 import Title from "../title";
-import "./index.css";
 
-// @ts-ignore : Hack to make TS compiler happy
-// about no unassigned expressions and no unused variables
-const _ = injectGlobal`
-  body {
-    display: flex;
-    flex-direction: column;
-  }
-`;
+const client = new ApolloClient({ uri: "http://localhost:4000" });
 
-class App extends React.Component {
-  public render() {
-    return (
-      <div className="App">
+const App = () => (
+  <ApolloProvider client={client}>
+    <BrowserRouter>
+      <div>
         <Title content="Mini Admin!" />
-        <Input />
+        <Navigation />
+        <Route path="/page1" component={Input} />
+        <Route path="/page2" component={Dropdown} />
       </div>
-    );
-  }
-}
+    </BrowserRouter>
+  </ApolloProvider>
+);
 
 export default App;
