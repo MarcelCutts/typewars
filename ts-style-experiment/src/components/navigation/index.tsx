@@ -11,8 +11,8 @@ const NavigationContainer = styled.div`
 
 const Navigation = () => (
   <NavigationContainer>
-    <Link to="/page1">Page 1</Link>
-    <Link to="/page2">Page 2</Link>
+    <Link to="/">Homepage</Link>
+    <Link to="/form">Form</Link>
   </NavigationContainer>
 );
 

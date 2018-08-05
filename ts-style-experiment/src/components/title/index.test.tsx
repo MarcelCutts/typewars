@@ -10,6 +10,6 @@ describe("Title component", () => {
 
   test("renders content as heading", () => {
     const component = shallow(<Title content="test" />);
-    expect(component.find("H1").text()).toEqual("test");
+    expect(component.childAt(0).text()).toEqual("test");
   });
 });

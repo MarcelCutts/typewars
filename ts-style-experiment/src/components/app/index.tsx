@@ -2,9 +2,9 @@ import * as React from "react";
 import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "react-apollo";
 import { BrowserRouter, Route } from "react-router-dom";
-import Dropdown from "../dropdown";
 import Input from "../input";
 import Navigation from "../navigation";
+import Placeholder from "../placeholder";
 import Title from "../title";
 
 const client = new ApolloClient({ uri: "http://localhost:4000" });
@@ -15,8 +15,8 @@ const App = () => (
       <div>
         <Title content="Mini Admin!" />
         <Navigation />
-        <Route path="/page1" component={Input} />
-        <Route path="/page2" component={Dropdown} />
+        <Route exact={true} path="/" component={Placeholder} />
+        <Route path="/form" component={Input} />
       </div>
     </BrowserRouter>
   </ApolloProvider>

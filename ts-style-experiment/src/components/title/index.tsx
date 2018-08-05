@@ -2,8 +2,10 @@ import * as React from "react";
 import styled from "../../styled-components";
 
 const RedHeader = styled.h1`
-  color: red;
+  color: white;
   padding: 20px;
+  background: #294e80;
+  font-family: montserrat;
 `;
 
 interface IProps {
