@@ -6,6 +6,7 @@
   "rules": {
     "ordered-imports": false,
     "no-console": [false, "log"],
-    "max-classes-per-file": [false]
+    "max-classes-per-file": [false],
+    "jsx-no-lambda": false
   }
 }
