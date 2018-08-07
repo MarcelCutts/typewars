@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "graphql-yoga": "^1.14.12"
+  }
+}
