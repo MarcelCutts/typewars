@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "../../styled-components";
 
-const RedHeader = styled.h1`
+const BlueHeader = styled.h1`
   color: white;
   padding: 20px;
   background: #294e80;
@@ -12,6 +12,6 @@ interface IProps {
   content: string;
 }
 
-const Title = ({ content }: IProps) => <RedHeader>{content}</RedHeader>;
+const Title = ({ content }: IProps) => <BlueHeader>{content}</BlueHeader>;
 
 export default Title;

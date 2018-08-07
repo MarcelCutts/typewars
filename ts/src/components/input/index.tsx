@@ -54,18 +54,15 @@ const Input = () => (
 
       return (
         <FormUpdateMutation mutation={UPDATE_FORM_CONTENT}>
-          {(updateForm, response) => {
-            console.log("🔥", response);
-            return (
-              <div>
-                <input
-                  onBlur={updateFormEvent(updateForm)}
-                  defaultValue={data && data.form && data.form.input}
-                />
-                <div>{response && response.data && response.data.updateForm}</div>
-              </div>
-            );
-          }}
+          {(updateForm, response) => (
+            <div>
+              <input
+                onBlur={updateFormEvent(updateForm)}
+                defaultValue={data && data.form && data.form.input}
+              />
+              <div>{response && response.data && response.data.updateForm}</div>
+            </div>
+          )}
         </FormUpdateMutation>
       );
     }}

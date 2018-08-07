@@ -45,7 +45,6 @@ interface IInitialProps { initialCounter: number }
  * it always needs to be indexible and we lose type safety of the 
  *  functions we put in. 
  */
-
 interface IUpdaters extends StateHandlerMap<IState> {
   incrementOn: (n: number) => IState; // (counter:number) => (value: number) => IState is
   decrementOn: (n: number) => IState;

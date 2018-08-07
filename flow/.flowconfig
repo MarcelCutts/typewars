@@ -1,0 +1,16 @@
+[ignore]
+.*/node_modules/styled-components/.*
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+
+[strict]
+unclear-type
+unsafe-getters-setters
+untyped-import
+untyped-type-import
