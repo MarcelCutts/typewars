@@ -19,7 +19,7 @@ There are three applications within this repository. Two front-end ones, `ts` an
 1. Install dependencies with `yarn`
 1. Run with `node index.js`
 
-Your server is not running at `http://localhost:4000`. A playground is also available at this address.
+Your server is now running at [http://localhost:4000](http://localhost:4000). A playground is also available at this address.
 
 #### TypeScript and Flow react applications
 1. Go into `/ts` or `flow` for the TypeScript or Flow applications respectively
