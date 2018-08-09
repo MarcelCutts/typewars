@@ -315,6 +315,8 @@ Cannot create Title element because property content is missing in props [1] but
 
 One downside in comparison to TS is the live in-editor checking does not have the same prettification and will revert to more functional messages without the extra context. However, if these aren't illuminating enough, teasing out the full error is a small step.
 
+***WINNNER: FLOW***
+
 # Lock-in 🔐
 
 Unlike Flow or ReasonML, there is an element of lock in with TS. Should you wish to migrate away from TS, it can be difficult as the compiled output for more complex cases will not be readable or at least pleasant-to-maintain JS.
