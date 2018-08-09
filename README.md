@@ -27,15 +27,14 @@ Your server is now running at [http://localhost:4000](http://localhost:4000). A 
 
 Table of Contents 
 =================
-  * [The contestants 🥊](#Configuration)
-  * [Set up & Configuration 🏗](#Configuration)
-  * [Tooling](#screenshot)
-  * [Wielding Types in Anger ⚡️](#installation)
-  * [Errors ❗️](#Lock-in)
-  * [Lock-in 🔐](#installation)
-  * [Progressive Inclusion 🎻](#Lock-in)
-  * [Thrilling Conclusion 💥](#Lock-in)
-  * [Running the Applications 🏎](#sss)
+  * [The contestants 🥊](#the-contestants-)
+  * [Set up & Configuration 🏗](#set-up--configuration-)
+  * [Tooling 🛠](#tooling-)
+  * [Wielding Types in Anger ⚡️](#wielding-types-in-anger-%EF%B8%8F)
+  * [Errors ❗️](#errors-%EF%B8%8F)
+  * [Lock-in 🔐](#lock-in-)
+  * [Progressive Inclusion 🎻](#progressive-inclusion-)
+  * [Thrilling Conclusion 💥](#thrilling-conclusion-)
 
 
 # The contestants 🥊
