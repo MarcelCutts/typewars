@@ -29,7 +29,7 @@ Table of Contents
 =================
   * [The contestants 🥊](#the-contestants-)
   * [Set up & Configuration 🏗](#set-up--configuration-)
-  * [Tooling](#tooling-)
+  * [Tooling 🛠](#tooling-)
   * [Wielding Types in Anger ⚡️](#wielding-types-in-anger-%EF%B8%8F)
   * [Errors ❗️](#errors-%EF%B8%8F)
   * [Lock-in 🔐](#lock-in-)
