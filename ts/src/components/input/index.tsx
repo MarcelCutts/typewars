@@ -2,7 +2,7 @@ import * as React from "react";
 import { Query, Mutation, MutationFn } from "react-apollo";
 import gql from "graphql-tag";
 
-const updateFormEvent = (mutation: MutationFn<IMutationData, any>) => (
+const updateFormEvent = (mutation: MutationFn<IMutationData, IMutationVariables>) => (
   e: React.FormEvent<HTMLInputElement>
 ) => {
   e.preventDefault();
