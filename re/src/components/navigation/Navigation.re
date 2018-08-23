@@ -1,14 +1,21 @@
 let component = ReasonReact.statelessComponent("Navigation");
 
+module Styles = {
+  open Css;
+
+  let container =
+    style([
+      display(flexBox),
+      justifyContent(spaceAround),
+      paddingBottom(px(20)),
+    ]);
+};
+
 let make = _children => {
   ...component,
   render: _self =>
-    <div>
-      <button onClick=(_e => ReasonReact.Router.push("/#counter"))>
-        ("Counter" |> ReasonReact.string)
-      </button>
-      <button onClick=(_e => ReasonReact.Router.push("#form"))>
-        ("Form" |> ReasonReact.string)
-      </button>
+    <div className=Styles.container>
+      <a href="#counter"> ("Counter" |> ReasonReact.string) </a>
+      <a href="#form"> ("Form" |> ReasonReact.string) </a>
     </div>,
 };

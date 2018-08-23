@@ -1,21 +1,9 @@
-Css.(
-  global(
-    "body",
-    [
-      height(pct(100.)),
-      width(pct(100.)),
-      display(flexBox),
-      flexDirection(column),
-      justifyContent(center),
-      alignItems(center),
-      textAlign(center),
-    ],
-  )
-);
-
 type route =
   | Counter
   | Form;
+
+type action =
+  | ChangeRoute(route);
 
 let mapUrltoRoute = hash =>
   switch (hash) {
@@ -24,15 +12,7 @@ let mapUrltoRoute = hash =>
   | _ => Counter
   };
 
-type action =
-  | ChangeRoute(route);
-
 type state = {route};
-
-let reducer = (action, _state) =>
-  switch (action) {
-  | ChangeRoute(route) => ReasonReact.Update({route: route})
-  };
 
 let component = ReasonReact.reducerComponent("App");
 
@@ -41,7 +21,10 @@ let make = _children => {
   initialState: () => {
     route: ReasonReact.Router.dangerouslyGetInitialUrl().hash |> mapUrltoRoute,
   },
-  reducer,
+  reducer: (action, _state) =>
+    switch (action) {
+    | ChangeRoute(route) => ReasonReact.Update({route: route})
+    },
   didMount: self => {
     let token =
       ReasonReact.Router.watchUrl(url =>

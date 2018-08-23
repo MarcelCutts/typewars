@@ -4,7 +4,7 @@ module Styles = {
   let container =
     style([
       color(white),
-      20 |> px |> padding,
+      padding(px(20)),
       background(rgb(219, 77, 63)),
       fontFamily("montserrat"),
     ]);
