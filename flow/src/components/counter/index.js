@@ -1,4 +1,4 @@
-// @flow strict
+// @flow
 import React from "react";
 import { withStateHandlers, defaultProps, compose } from "recompose";
 import type { HOC } from "recompose";

@@ -23,7 +23,8 @@ const resolvers = {
     })
   },
   Mutation: {
-    updateForm: (_, { content }, context) => `Form server received: ${content}`
+    updateForm: (_, { content }, context) =>
+      console.log("⚡️", content) || `Form server received: ${content}`
   }
 };
 

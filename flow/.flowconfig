@@ -1,5 +1,4 @@
 [ignore]
-.*/node_modules/styled-components/.*
 
 [include]
 
@@ -10,7 +9,3 @@
 [options]
 
 [strict]
-unclear-type
-unsafe-getters-setters
-untyped-import
-untyped-type-import

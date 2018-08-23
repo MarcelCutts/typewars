@@ -69,7 +69,7 @@ const counterState = withStateHandlers<IState, IUpdaters, IInitialProps>(
 );
 
 // This passes even if we make it a string!
-const defaultCounter = defaultProps({ initialCounter: 0 });
+const defaultCounter = defaultProps({ initialCount: 0 });
 
 // This passes even if no default no is set
 const enhance = compose<ICounter, IInitialProps>(
